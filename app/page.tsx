@@ -4,6 +4,7 @@ import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import AvatarC from "@/components/ui/avatar"
+import ProjectsCarousel from "@/components/projects"
 
 export default function IndexPage() {
   return (
@@ -70,6 +71,10 @@ export default function IndexPage() {
           </Link>
         </div>
       </div>
+      <div className="grid">
+        <ProjectsCarousel />
+      </div>
+
     </section>
   )
 }
