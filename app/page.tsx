@@ -8,8 +8,8 @@ import ProjectsCarousel from "@/components/projects"
 
 export default function IndexPage() {
   return (
-    <section className="container mt-10 grid items-center gap-6  pb-8 pt-6 md:py-10">
-      <div className="mt-3 flex max-w-3xl flex-col items-start gap-5 p-4 ">
+    <section className="container relative mt-10 grid items-center gap-6 pb-8 pt-6 md:py-10 ">
+      <div className="ml-20 mt-3 flex max-w-4xl flex-col items-start gap-5  p-6 lg:px-8">
         <div>
           <AvatarC />
         </div>
@@ -71,7 +71,7 @@ export default function IndexPage() {
           </Link>
         </div>
       </div>
-      <div className="grid">
+      <div className="abdolute inset-0 grid">
         <ProjectsCarousel />
       </div>
 

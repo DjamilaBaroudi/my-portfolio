@@ -2,9 +2,7 @@ import * as React from "react"
 import Link from "next/link"
 
 import { NavItem } from "@/types/nav"
-import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { Icons } from "@/components/icons"
 
 interface MainNavProps {
   items?: NavItem[]
@@ -12,7 +10,7 @@ interface MainNavProps {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="flex items-center justify-center rounded-full border p-4 ">
+    <div className="flex items-center justify-center rounded-full border bg-white  px-6 py-3 ring-1 ring-zinc-100 dark:bg-zinc-800 dark:ring-zinc-300/20">
       {items?.length ? (
         <nav className="flex gap-6">
           {items?.map(

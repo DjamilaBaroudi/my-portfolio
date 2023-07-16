@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
-import ProjectsCarousel from "@/components/projects"
+import { SiteFooter } from "@/components/site-footer"
 
 export const metadata: Metadata = {
   title: {
@@ -43,8 +43,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col ">
+              <div className="fixed inset-0 -z-20 flex justify-center sm:px-8">
+                <div className="flex w-full max-w-7xl lg:px-8">
+                  <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div>
+                </div>
+              </div>
               <SiteHeader />
               <div className="flex-1">{children}</div>
+              <SiteFooter items={siteConfig.mainNav} />
             </div>
             <TailwindIndicator />
           </ThemeProvider>
