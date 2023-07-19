@@ -5,10 +5,11 @@ import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
 import AvatarC from "@/components/ui/avatar"
 import ProjectsCarousel from "@/components/projects"
+import { SiteHeader } from "@/components/site-header"
 
 export default function IndexPage() {
   return (
-    <section className="container relative mt-10 grid items-center gap-6 pb-8 pt-6 md:py-10 ">
+    <section className="container relative -mt-32 grid items-center gap-6 pb-8 md:py-10 ">
       <div className="ml-20 mt-3 flex max-w-4xl flex-col items-start gap-5  p-6 lg:px-8">
         <div>
           <AvatarC />

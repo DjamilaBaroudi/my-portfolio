@@ -2,9 +2,6 @@
 
 import Link from "next/link"
 import { Typography } from "@material-tailwind/react";
-
-import { siteConfig } from "@/config/site"
-import { MainNav } from "@/components/main-nav"
 import { NavItem } from "@/types/nav"
 import { cn } from "@/lib/utils"
 
